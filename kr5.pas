@@ -64,10 +64,10 @@ end;
 
 begin
 randomize;
-assign(test1,'E:\Алембаев Артём ИСПк 204-52-00\test1.txt');
-assign(test1_2,'E:\Алембаев Артём ИСПк 204-52-00\test1_2.txt');
-assign(test2_2,'E:\Алембаев Артём ИСПк 204-52-00\test2_2.txt');
-assign(test2,'E:\Алембаев Артём ИСПк 204-52-00\test2.txt');
+assign(test1,'C:\CR5\test1.txt');
+assign(test1_2,'C:\CR5\test1_2.txt');
+assign(test2_2,'C:\CR5\test2_2.txt');
+assign(test2,'C:\CR5\test2.txt');
 repeat
 writeln('Введите 1 или 2');
 writeln('Введите 0 для выхода');
