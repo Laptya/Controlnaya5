@@ -25,13 +25,12 @@ end;
 
 procedure Sort2(left, right: integer);
 var
-  newLeft, newRight : integer; //границы массива
+  newLeft, newRight : integer; 
   temp, pivot : integer;
 begin
   newLeft := left;
   newRight := right;
 
-  {опорный элемент массива}
   pivot := a[(left + right) div 2];
 
   repeat
@@ -43,7 +42,7 @@ begin
 
     if newLeft <= newRight then
     begin
-      {обмен значений}
+      
       temp := a[newLeft];
       a[newLeft] := a[newRight];
       a[newRight] := temp;
@@ -53,11 +52,11 @@ begin
     end;
   until newLeft > newRight;
 
-  {рекурсивный вызов сортировки для "меньших" элементов}
+  
   if left < newRight then
     Sort2(left, newRight);
 
-  {сортировка - для "больших" элементов}
+  
   if newLeft < right then
     Sort2(newLeft, right);
 end;
